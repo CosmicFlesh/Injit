@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
+@import "leaflet/dist/leaflet.css";
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+
+.headerlink {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.h1agenda {
+  margin-left: 10px;
+}
+
+.servicios {
+  background-color: #e78422;
+}
+
+.agenda {
+  display: inline-flex
+}
+
+.boton-agenda {
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.img-agenda {
+  width: 50%;
+  margin-right: 50px;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+
+* {
+
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 90%;
+}
+
+.contenido {
+  position: relative;
+  width: 100%;
+  max-width: 1900px;
+  margin: auto;
+}
+
+.contenido-imagen {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.info h1 {
+  margin: 0;
+  font-size: 2rem;
+
+}
+
+.h1principal {
+  text-align: center;
+}
+
+.info button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff9800;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  background-color: #e78422;
+  padding: 5px;
+
+
+}
+
+.header .menu {
+  margin-right: 100px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.header .menu ul {
+  font-family: 'Lexend Exa', sans-serif, bold;
+  display: flex;
+  list-style: none;
+  color: white;
+ text-decoration: none;
+  font-size: large;
+  gap: 8px;
+}
+.header .menu  button{
+  font-size: large;
+  background-color: black;
+  color: white;
+  border : none;
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+.header .menu li a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.header .menu ul button a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.header .menu ul button a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.header .menu ul button a{
+text-decoration: none;
+color: #ffffff;
+
+}.header .menu ul button {
+margin-top: -9px;
+}
+
+.header .Mecanica {
+  font-family: 'Lexend Exa', sans-serif;
+  padding-top: 9px;
+  margin-left: 40px;
+
+}
+
+.header .Web {
+
+  font-family: "Maiden Orange", serif;
+  font-size: 40px;
+  margin-left: 0px;
+}
+
+.footer {
+  background-color: #e78422;
+  padding: 65px;
+  color: white;
+}
+
+.name {
+  display: flex;
+}
+
+.name .web {
+  font-family: "Maiden Orange", serif;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.menu-productos ul {
+  display: flex;
+  size: 10px;
+  gap: 0px;
+}
+
+.menureseña {
+  background-color: #e78422;
+  padding: 30px;
+}
+
+.menureseña ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #e78422;
+}
+
+.cardreseña {
+  border: 1px solid hsl(0, 0%, 80%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+
+  max-width: 250px;
+  display: inline-block;
+}
+
+
+
+.cardreseña .user-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.cardreseña .card-title {
+  margin: 0;
+  width: auto;
+  color: hsl(0, 0%, 20%)
+}
+
+.title-r {
+  padding-left: 46px;
+  font-size: xx-large;
+}
+
+.menu-productos {
+  align-self: center;
+  justify-self: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image {
+  max-width: 80%;
+  height: auto;
+  align-self: center;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
+
+.card-s .card-image-s {
+  width: 350px;
+  border-radius: 2%;
+
+}
+
+.card-s {
+  background-color: white;
+  border-radius: 2%;
+}
+
+.menu-productos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100r;
+  size: 10px;
+  gap: 0px;
+}
+
+.menu-servicios ul {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  size: 10px;
+  gap: 50px;
+
+
+}
+
+.card .card-title {
+  font-family: arial, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%)
+}
+
+.card .card-text {
+  font-family: arial, sans-serif;
+  color: hsl(0, 0%, 20%)
+}
+
+.card-producto .card-image {
+  align-self: center;
+}
+
+.localcont button {
+  margin-left: 370px;
+  margin-top: 5px;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+.contacto {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.mapa {
+  margin-top: 1rem;
+  height: 400px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.lista-productos {
+
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+}
+
+
+.sinprodu{
+  font-size: larger;
+}
+
+.contenedor-productos {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+   height: 900px;
+}
+
+
+.sidebar-filtros .buscar{
+width: 230px;
+}
+
+.sidebar-filtros {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+  height: 600px;
+}
+
+.sidebar-filtros h3 {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-filtros input,
+.sidebar-filtros select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+.grid-productos {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
