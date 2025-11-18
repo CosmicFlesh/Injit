@@ -88,6 +88,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .header {
   margin: 0px;
   padding: 0px;
@@ -120,6 +122,10 @@ body {
   border : none;
   border-radius: 5px; 
   padding: 10px;
+}
+
+.header .menu{
+margin-top: 20px;
 }
 
 .header .menu li a{

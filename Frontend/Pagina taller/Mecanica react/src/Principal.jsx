@@ -7,7 +7,7 @@ function Principal() {
       <div className="info">
       <h1 >🐺 InJit 🐶</h1>
       <p>bienvenido a la pagina para los dueños responsables de la crianza y cuidado de mascotas </p>
-      <button>Buscar mascotas</button>
+      <button><a href="../producto.html">Buscar mascotas</a></button>
       </div>
     </div>
   );
