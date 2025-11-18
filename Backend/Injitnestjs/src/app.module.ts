@@ -4,12 +4,13 @@ import { AppService } from './app.service';
 import { MascotasModule } from './Mascotas/mascotas.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { DatabaseModule } from './Database/database.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
       TypeOrmModule.forRootAsync({
-        imports: [ConfigModule],
+        imports: [ConfigModule, DatabaseModule],
         inject: [ConfigService],
         useFactory: (configService: ConfigService) => ({
         type: 'postgres',
