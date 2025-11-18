@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common';
 import { MascotasService } from './mascotas.service';
-import { Producto } from './mascotas.entity';
+import { Mascotas } from './mascotas.entity';
 
 @Controller('Mascotas')
 export class MascotasController {
   constructor(private readonly MascotasService: MascotasService) {}
 
   @Get()
-  findAll(): Promise<Producto[]> {
+  findAll(): Promise<Mascotas[]> {
     return this.MascotasService.findAll();
   }
 
@@ -17,12 +17,12 @@ export class MascotasController {
   }
 
   @Post()
-  create(@Body() producto: Partial<Producto>) {
-    return this.MascotasService.create(producto);
+  create(@Body() Mascotas: Partial<Mascotas>) {
+    return this.MascotasService.create(Mascotas);
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() data: Partial<Producto>) {
+  update(@Param('id') id: string, @Body() data: Partial<Mascotas>) {
     return this.MascotasService.update(Number(id), data);
   }
 

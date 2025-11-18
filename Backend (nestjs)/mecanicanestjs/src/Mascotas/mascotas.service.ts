@@ -1,34 +1,34 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Producto } from './mascotas.entity';
+import { Mascotas } from './mascotas.entity';
 
 @Injectable()
 export class MascotasService {
   constructor(
-    @InjectRepository(Producto)
-    private productoRepo: Repository<Producto>,
+    @InjectRepository(Mascotas)
+    private MascotasRepo: Repository<Mascotas>,
   ) {}
 
-  findAll(): Promise<Producto[]> {
-    return this.productoRepo.find();
+  findAll(): Promise<Mascotas[]> {
+    return this.MascotasRepo.find();
   }
 
-  create(producto: Partial<Producto>) {
-    const nuevo = this.productoRepo.create(producto);
-    return this.productoRepo.save(nuevo);
+  create(Mascotas: Partial<Mascotas>) {
+    const nuevo = this.MascotasRepo.create(Mascotas);
+    return this.MascotasRepo.save(nuevo);
   }
 
-  findOne(id: number): Promise<Producto|null> {
-    return this.productoRepo.findOneBy({ id });
+  findOne(id: number): Promise<Mascotas|null> {
+    return this.MascotasRepo.findOneBy({ id });
   }
 
-  async update(id: number, data: Partial<Producto>) {
-    await this.productoRepo.update(id, data);
+  async update(id: number, data: Partial<Mascotas>) {
+    await this.MascotasRepo.update(id, data);
     return this.findOne(id);
   }
 
   remove(id: number) {
-    return this.productoRepo.delete(id);
+    return this.MascotasRepo.delete(id);
   }
 }
