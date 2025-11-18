@@ -11,6 +11,7 @@ import { DatabaseModule } from './Database/database.module';
   imports: [DatabaseModule,
     ConfigModule.forRoot({ isGlobal: true }),
       TypeOrmModule.forRootAsync({
+        
         imports: [ConfigModule, ],
         inject: [ConfigService],
         useFactory: (configService: ConfigService) => ({
@@ -20,6 +21,9 @@ import { DatabaseModule } from './Database/database.module';
         username: configService.get<string>('DB_USERNAME', 'neondb_owner'),
         password: configService.get<string>('DB_PASSWORD', 'npg_qz8VvJnNh0bI'),
         database: configService.get<string>('DB_DATABASE', 'neondb'),
+        ssl: {
+    rejectUnauthorized: false,
+  },
         autoLoadEntities: true,
         synchronize: true,
       }),
