@@ -21,5 +21,6 @@ import { neon } from '@neondatabase/serverless';
     },
   ],
   exports: ['POSTGRES_POOL'],
+  
 })
 export class DatabaseModule {}

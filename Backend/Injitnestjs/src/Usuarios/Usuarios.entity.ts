@@ -10,6 +10,12 @@ export class Usuarios {
   Nombre: string;
 
   @Column()
+  correo: string;
+
+  @Column()
+  Contraseña: string;
+
+  @Column()
   Comuna: string;
 
   @Column()
@@ -18,6 +24,5 @@ export class Usuarios {
   @Column()
   Telefono: string;
    
-  @Column()
-  correo: string;
+  
 }
