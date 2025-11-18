@@ -8,10 +8,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { DatabaseModule } from './Database/database.module';
 
 @Module({
-  imports: [
+  imports: [DatabaseModule,
     ConfigModule.forRoot({ isGlobal: true }),
       TypeOrmModule.forRootAsync({
-        imports: [ConfigModule, DatabaseModule],
+        imports: [ConfigModule, ],
         inject: [ConfigService],
         useFactory: (configService: ConfigService) => ({
         type: 'postgres',
