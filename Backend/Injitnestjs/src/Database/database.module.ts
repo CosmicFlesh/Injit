@@ -1,20 +1,25 @@
-import { config } from 'dotenv';
 import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { neon } from '@neondatabase/serverless';
 
-config({
-  path: ['.env', '.env.production', '.env.local'],
-});
-
-const sql = neon(process.env.DATABASE_URL);
-
-const dbProvider = {
-  provide: 'POSTGRES_POOL',
-  useValue: sql,
-};
-
 @Module({
-  providers: [dbProvider],
-  exports: [dbProvider],
+  imports: [ConfigModule.forRoot({
+    isGlobal: true,
+    envFilePath: ['.env', '.env.production', '.env.local'],
+  })],
+  providers: [
+    {
+      provide: 'POSTGRES_POOL',
+      inject: [ConfigService],
+      useFactory: (config: ConfigService) => {
+        const url = config.get<string>('DATABASE_URL');
+        if (!url) {
+          throw new Error('❌ DATABASE_URL no está definida en el archivo .env');
+        }
+        return neon(url);
+      },
+    },
+  ],
+  exports: ['POSTGRES_POOL'],
 })
 export class DatabaseModule {}
