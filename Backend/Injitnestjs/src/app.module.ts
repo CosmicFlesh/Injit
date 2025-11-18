@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MascotasModule } from './Mascotas/mascotas.module';
+import { UsuariosModule } from './Usuarios/Usuarios.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { DatabaseModule } from './Database/database.module';
@@ -23,7 +24,8 @@ import { DatabaseModule } from './Database/database.module';
         synchronize: true,
       }),
     }),
-    MascotasModule
+    MascotasModule,
+    UsuariosModule
   ],
   controllers: [AppController],
   providers: [AppService],})

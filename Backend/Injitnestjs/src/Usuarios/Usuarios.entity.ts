@@ -2,22 +2,22 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Mascotas {
+export class Usuarios {
   @PrimaryGeneratedColumn()
   id: number;
-
-   @Column()
-  Animal: string;
 
   @Column()
   Nombre: string;
 
   @Column()
-  edad: number;
+  Comuna: string;
 
-  @Column('decimal')
-  Sexo: boolean;
+  @Column()
+  region: string;
   
   @Column()
-  Pureza: string;
+  Telefono: string;
+   
+  @Column()
+  correo: string;
 }

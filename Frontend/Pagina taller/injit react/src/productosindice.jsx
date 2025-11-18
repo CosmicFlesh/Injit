@@ -9,7 +9,7 @@ const ProductoIndex = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/Mascotas')
+      .get('injit-backend.vercel.app/Mascotas')
       .then((res) => setMascotas(res.data))
       .catch((err) => console.error('no cargaron los Mascotas:', err))
   }, []);

@@ -10,8 +10,8 @@ function Agenda() {
 
                 <nav className="menu-agenda">
                     <ul>
-                        <li><h2>instruccion</h2></li>
-                        <p>descripciones descripciones descripciones descripciones descripciones descripciones descripciones </p>
+                        <li><h2>Porque registrarce?</h2></li>
+                        <p>porque esto te ayudara a obtener una interaccion responsable </p>
                         <li><h2>instruccion</h2></li>
                         <p>descripciones descripciones descripciones descripciones descripciones descripciones descripciones </p>
                         <li><h2>instruccion</h2></li>
