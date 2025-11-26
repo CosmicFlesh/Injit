@@ -14,11 +14,11 @@ const ProductoIndex = () => {
       .catch((err) => console.error('no cargaron los Mascotas:', err))
   }, []);
 
-  const MascotasFiltrados = Mascotas.filter(p =>
-    p.nombre.toLowerCase().includes(busqueda.toLowerCase()) &&
-    (categoriaFiltro === '' || p.categoria === categoriaFiltro)
-  );
-console.log('Mascotas desde API:', MascotasFiltrados);
+  //const MascotasFiltrados = Mascotas.filter(p =>
+  //  p.nombre.toLowerCase().includes(busqueda.toLowerCase()) &&
+  //  (categoriaFiltro === '' || p.categoria === categoriaFiltro)
+  //);
+console.log('Mascotas desde API:');
   return (
     <div className="contenedor-Mascotas">
       <aside className="sidebar-filtros">
@@ -37,18 +37,26 @@ console.log('Mascotas desde API:', MascotasFiltrados);
         <h3>Filtrar por categoría</h3>
         <select value={categoriaFiltro} onChange={e => setCategoriaFiltro(e.target.value)}>
           <option value="">Todas</option>
-          <option value="Motor">Puro</option>
-          <option value="Aire">Mixto</option>
-          <option value="Frenos">Sexo</option>
-          <option value="Ruedas">Animales</option>
+          <option value="Puro">Puro</option>
+          <option value="Mixto">Mixto</option>
+          <option value="Sexo">Sexo</option>
+          <option value="Animales">Animales</option>
+        </select>
+        <h3>Filtrar por animal</h3>
+        <select value={categoriaFiltro} onChange={e => setCategoriaFiltro(e.target.value)}>
+          <option value="">Todos</option>
+          <option value="perros">perros</option>
+          <option value="gatos">gatos</option>
+          <option value="Aves">Aves</option>
+          <option value="Roedores">Roedores</option>
         </select>
       </aside>
 
-      <main className="grid-Mascotas">
+      {/*<main className="grid-Mascotas">
         {MascotasFiltrados.length > 0 ? (
           MascotasFiltrados.map(producto => (
             
-            <Cardprodu key={Mascota.id}
+            <Cardprodu //key={Mascota.id}
               nombre={Mascota.nombre}
               sexo={Mascota.sexo}
               descripcion={Mascota.descripcion}
@@ -59,7 +67,7 @@ console.log('Mascotas desde API:', MascotasFiltrados);
         ) : (
           <p className='sinprodu'>No se encontraron Mascotas.</p>
         )}
-      </main>
+      </main>*/}
     </div>
   );
 };

@@ -18,7 +18,7 @@
   background-color: #e78422;
 }
 
-.agenda {
+.agenda .divagenda{
   display: inline-flex
 }
 
@@ -43,6 +43,10 @@ body {
   margin: 0;
   height: 90%;
 }
+
+
+
+
 
 .contenido {
   position: relative;
@@ -165,10 +169,84 @@ margin-top: -9px;
   margin-left: 0px;
 }
 
+.contenedorformulario{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+
+
 .footer {
   background-color: #e78422;
-  padding: 65px;
+  padding: 45px;
+  padding-bottom:10px;
   color: white;
+
+
+
+
+ 
 }
 
 .name {
