@@ -1,6 +1,6 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import User from '../src/fomulario user.jsx'
+import Header from './Header.js'
+import Footer from './Footer.js'
+import User from '../fomulario user.jsx'
 
 
 
