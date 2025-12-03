@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
-import Main from "/src/main"
-import AppProdu from "./pages/AppProdu";
-import Razas from "./pages/Razas";
-import Purezas from "./pages/Purezas";
-import Login from "./pages/login";
+import Main from "/src/main.jsx"
+import AppProdu from "./pages/AppProdu.jsx";
+import Razas from "./pages/Razas.jsx";
+import Purezas from "./pages/Purezas.jsx";
+import Login from "./pages/login.jsx";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
