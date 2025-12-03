@@ -4,7 +4,7 @@ import Main from "/src/main"
 import AppProdu from "./pages/AppProdu";
 import Razas from "./pages/Razas";
 import Purezas from "./pages/Purezas";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 
 import Header from "./components/Header";
 import Footer from "../components/Footer";
