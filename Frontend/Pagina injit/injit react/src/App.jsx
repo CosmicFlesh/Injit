@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Main from "./pages/main"
+import Main from "/src/main"
 import AppProdu from "./pages/AppProdu";
 import Razas from "./pages/Razas";
 import Purezas from "./pages/Purezas";
