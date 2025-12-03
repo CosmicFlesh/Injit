@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import Main from "/src/Main.jsx"
+import home from "./pages/home.jsx";
 import AppProdu from "./pages/AppProdu.jsx";
-import Razas from "./pages/Razas.jsx";
-import Purezas from "./pages/Purezas.jsx";
 import Login from "./pages/login.jsx";
 
 import Header from "./components/Header.jsx";
@@ -14,10 +12,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Main/>} />
+        <Route path="/" element={<home />} />
         <Route path="/AppProdu" element={<AppProdu />} />
-        <Route path="/razas" element={<Razas />} />
-        <Route path="/purezas" element={<Purezas />} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer/>
