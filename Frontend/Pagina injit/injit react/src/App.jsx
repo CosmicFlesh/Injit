@@ -1,29 +1,27 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Productos from './Productos.jsx'
-import Principal from './Principal.jsx'
-import Reseña from './reseñas.jsx'
-import Servicios from './servicios.jsx'
-import Agenda from './agendacion.jsx'
-import Local from './Localizacion.jsx'
+import { Routes, Route } from "react-router-dom";
 
+import Home from "./src/Home";
+import Producto from "./src/Producto";
+import Razas from "./src/Razas";
+import Purezas from "./src/Purezas";
+import Login from "./src/Login";
 
+import Header from "./src/Header";
 
 function App() {
-
   return (
     <>
       <Header />
-      <Principal />
-      <Productos />
-      <Reseña />
-      <Agenda />
-      <Servicios />
-      <Local />
-      <Footer />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/producto" element={<Producto />} />
+        <Route path="/razas" element={<Razas />} />
+        <Route path="/purezas" element={<Purezas />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
-    
   );
 }
 
-export default App
+export default App;
