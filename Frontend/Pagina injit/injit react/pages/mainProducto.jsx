@@ -8,3 +8,6 @@ createRoot(document.getElementById('root')).render(
     <AppProdu />
   </StrictMode>,
 )
+
+
+export default AppProdu
