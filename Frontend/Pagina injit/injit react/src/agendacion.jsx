@@ -16,7 +16,7 @@ function Agenda() {
                             <p>descripciones descripciones descripciones descripciones descripciones descripciones descripciones </p>
                             <li><h2>instruccion</h2></li>
                             <p>descripciones descripciones descripciones descripciones descripciones descripciones descripciones </p>
-                            <button className='boton-agenda'>Registrar</button>
+                            <button className='boton-agenda'><Link to="/login" >Registrar</Link></button>
                         </ul>
                     </nav>
                     <img src={profpic} alt="" className='img-agenda' />
