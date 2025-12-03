@@ -1,25 +1,26 @@
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./src/Home";
-import Producto from "./src/Producto";
-import Razas from "./src/Razas";
-import Purezas from "./src/Purezas";
-import Login from "./src/Login";
 
-import Header from "./src/Header";
+import Producto from "./pages/mainProducto";
+import Razas from "./pages/Razas";
+import Purezas from "./pages/Purezas";
+import Login from "./pages/Login";
+
+import Header from "./components/Header";
+import Footer from "../components/Footer";
 
 function App() {
   return (
     <>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/producto" element={<Producto />} />
+        <Route path="/mainProducto" element={<Producto />} />
         <Route path="/razas" element={<Razas />} />
         <Route path="/purezas" element={<Purezas />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
