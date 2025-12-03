@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import AppProdu from '../src/AppProdu.jsx'
+import AppProdu from './AppProdu.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -10,4 +10,4 @@ createRoot(document.getElementById('root')).render(
 )
 
 
-export default AppProdu
+

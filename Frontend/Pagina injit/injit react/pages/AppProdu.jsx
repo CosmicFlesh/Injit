@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import ProductIndex from "./productosindice";
+import ProductIndex from "../src/productosindice";
 
 function AppProdu() {
 
