@@ -10,10 +10,10 @@ function Header() {
       <hr></hr>
       <nav className="menu">
         <ul>
-          <li><a href="./producto.html">Animales</a></li>
+          <li><a href="/producto.html">Animales</a></li>
           <li><a href="#">Razas</a></li>
           <li><a href="#">Purezas</a></li>
-          <button><a href="./login.html">Login</a></button>
+          <button><a href="/login.html">Login</a></button>
         </ul>
       </nav>
 
