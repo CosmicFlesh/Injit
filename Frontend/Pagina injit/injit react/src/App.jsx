@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Main from "/src/main.jsx"
+import Main from "/src/Main.jsx"
 import AppProdu from "./pages/AppProdu.jsx";
 import Razas from "./pages/Razas.jsx";
 import Purezas from "./pages/Purezas.jsx";
@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main/>} />
         <Route path="/AppProdu" element={<AppProdu />} />
         <Route path="/razas" element={<Razas />} />
         <Route path="/purezas" element={<Purezas />} />
