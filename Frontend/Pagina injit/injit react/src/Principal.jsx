@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import prinpic from './assets/purebred.jpg'
 
 function Principal() {
