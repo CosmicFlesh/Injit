@@ -1,19 +1,19 @@
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
 
     <header className="header">
-      <a className="headerlink" href="../index.html"> 
+      <Link className="headerlink" to="/"> 
       <h1 className="Mecanica">In</h1><h1 className="Web">Jit</h1>
       
-      </a>
+      </Link>
       <hr></hr>
       <nav className="menu">
         <ul>
-          <li><a href="/producto.html">Animales</a></li>
-          <li><a href="#">Razas</a></li>
-          <li><a href="#">Purezas</a></li>
-          <button><a href="/login.html">Login</a></button>
+          <li><Link href="/producto.html">Animales</Link></li>
+          <li><Link href="#">Razas</Link></li>
+          <li><Link href="#">Purezas</Link></li>
+          <button><Link href="/login.html">Login</Link></button>
         </ul>
       </nav>
 
