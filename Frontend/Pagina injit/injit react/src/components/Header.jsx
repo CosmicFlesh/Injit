@@ -5,8 +5,8 @@ function Header() {
     <header className="header">
       <Link className="headerlink" to="/"> 
       <h1 className="Mecanica">In</h1><h1 className="Web">Jit</h1>
-      
       </Link>
+ 
       <hr></hr>
       <nav className="menu">
         <ul>
