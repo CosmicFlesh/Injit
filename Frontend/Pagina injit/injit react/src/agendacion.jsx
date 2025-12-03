@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profpic from './assets/jsjsjs.jpg'
 
 function Agenda() {
