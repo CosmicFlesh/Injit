@@ -19,7 +19,7 @@ function User() {
                 <label>Contraseña:
                     <input type="text" />
                 </label>
-                <button><a href="">Registrar</a></button>
+                <button className="botonform"><a href="">Registrar</a></button>
                 </form>
             </div>
         <br />
